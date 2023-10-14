@@ -1,0 +1,46 @@
+﻿html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: visible;
+}
+
+th,td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  background-color: #55608f;
+}
+
+tr:hover {
+  background-color: rgba(85, 96, 143, 0.1);
+}
+
+td {
+	position: relative;
+	&:hover {
+	  &:before {
+	    content: "";
+	    position: flex;
+	    left: 0;
+	    right: 0;
+	    top: -9999px;
+	    bottom: -9999px;
+	    background-color: rgba(173, 216, 230, 0.1);
+	    z-index: -1;
+	  }
+	}
+}
